@@ -1,6 +1,6 @@
 ---
-title : About Me
+title : About
 description:
 ---
 
-大家好，我是七叶。
+大家好，我是七叶。
