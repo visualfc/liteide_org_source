@@ -1,0 +1,16 @@
+title : LiteIDE
+tagline: Blog Tagline
+home : https://visualfc.github.io/liteide.org
+author :
+  name : visualfc
+  email : visualfc@gmail.com
+  github : visualfc
+
+navigation :
+  - liteide.md
+  - archive.html
+  - tags.html
+  - categories.html
+  - pages.html
+  - about.md
+  
