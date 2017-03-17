@@ -1,5 +1,5 @@
 ---
-title: cross-compile
+title: LiteIDE 的交叉编译设置
 date: '2017-03-17'
 description:
 categories:
@@ -10,7 +10,8 @@ tags:
 - liteide
 - cross-compile
 ---
-## LiteIDE 的交叉编译设置
+
+<!-- ## LiteIDE 的交叉编译设置 -->
 
 LiteIDE 通过使用环境配置文件来支持 go 语言的交叉编译，对于 windows 和 linux 下相对简单，对于 macOS 可能会复杂一些，
 本文以 macOS 交叉编译 windows-386 可执行文件为例，简要介绍如何在 LiteIDE 中配置和实现交叉编译功能。
