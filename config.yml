@@ -7,7 +7,7 @@ production_url : https://visualfc.github.io/liteide.org
 
 posts:
   permalink: /:categories/:title/
-  summary_lines: 20
+  summary_lines: 10
   latest: 5
 
 pages:
