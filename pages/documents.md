@@ -5,4 +5,4 @@ description:
 
 LiteIDE Documents
 
-<a href="{{site.home}}/doc/install">Install</a>
+[Install]({{site.home}}/doc/install)
