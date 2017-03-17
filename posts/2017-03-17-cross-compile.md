@@ -20,22 +20,22 @@ LiteIDE 通过使用环境配置文件来支持 go 语言的交叉编译，对�
 
 首先选择环境，在工具栏环境选择中选择  cross-win32 切换至 windows-386 交对编译环境，我们点击工具栏上的 **编辑当前环境** 按钮，对当前使用的环境即 cross-win32.env 文件进行编辑，默认设置如下：
 
-```
-GOROOT=$HOME/go
-#GOBIN=
-GOARCH=386
-GOOS=windows
-CGO_ENABLED=0
 
-PATH=$GOROOT/bin:$PATH
+	GOROOT=$HOME/go
+	#GOBIN=
+	GOARCH=386
+	GOOS=windows
+	CGO_ENABLED=0
+	
+	PATH=$GOROOT/bin:$PATH
+	
+	LITEIDE_GDB=/usr/local/bin/gdb
+	LITEIDE_MAKE=make
+	LITEIDE_TERM=/usr/bin/open
+	LITEIDE_TERMARGS=-a Terminal
+	LITEIDE_EXEC=/usr/X11R6/bin/xterm
+	LITEIDE_EXECOPT=-e
 
-LITEIDE_GDB=/usr/local/bin/gdb
-LITEIDE_MAKE=make
-LITEIDE_TERM=/usr/bin/open
-LITEIDE_TERMARGS=-a Terminal
-LITEIDE_EXEC=/usr/X11R6/bin/xterm
-LITEIDE_EXECOPT=-e
-```
 
 我们可以看到 GOARCH 和 GOOS 已经设置完毕，我们需要更改的是 GOROOT 和 PATH 变量，主要设置方式有两种，
 
