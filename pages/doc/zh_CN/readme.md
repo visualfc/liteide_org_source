@@ -1,5 +1,5 @@
 ---
-title : LiteIDE
+title : LiteIDE 简介
 description:
 ---
 

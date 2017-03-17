@@ -1,5 +1,5 @@
 ---
-title : Guide
+title : 安装说明
 description:
 ---
 
