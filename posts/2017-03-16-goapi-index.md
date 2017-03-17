@@ -6,7 +6,9 @@ categories:
 - blog
 - liteide
 tags:
+- blog
 - goapi
+- liteide
 ---
 ## 更新 Golang Api Index 功能
 

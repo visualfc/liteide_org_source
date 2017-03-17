@@ -3,9 +3,12 @@ title: cross-compile
 date: '2017-03-17'
 description:
 categories:
-
+- blog
+- liteide
 tags:
-
+- blog
+- liteide
+- cross-compile
 ---
 ## LiteIDE 的交叉编译设置
 
