@@ -1,10 +1,7 @@
 ---
-title : Home
+title : LiteIDE X
 description:
 ---
-
-LiteIDE X
-=========
 
 
 ### Introduction
