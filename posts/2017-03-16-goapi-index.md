@@ -1,5 +1,5 @@
 ---
-title: goapi-index
+title: 更新 Golang Api Index 功能
 date: '2017-03-16'
 description:
 categories:
@@ -10,7 +10,8 @@ tags:
 - goapi
 - liteide
 ---
-## 更新 Golang Api Index 功能
+
+<!-- ## 更新 Golang Api Index 功能 -->
 
 最近更新了 Golang Api Index 功能，之前是通过 gotools 对 GOPATH 内的所有源码进行索引，并在用户目录中建立一个索引文件，
 文件格式与 go/api/go1.txt 类似，这个功能的问题是使用 gotools 建立索引的速度很慢，查询功能与 Golang Doc Search 的功能也有所重复，而且我还发现 gotools 工具对于 go1.8 的源码建立索引出错。
