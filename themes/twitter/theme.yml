@@ -6,7 +6,7 @@
     ],
    
     "widgets" : {
-      "google_prettify" : "twitter-bootstrap.css"
+      "google_prettify" : "twitter-bootstrap-fixed.css"
     }
     
   },
