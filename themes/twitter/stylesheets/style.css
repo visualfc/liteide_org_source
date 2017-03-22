@@ -285,3 +285,11 @@ li {
 @keyframes move{ 100%{ transform:rotate(0deg); }0%{ transform:rotate(360deg); } }
 
 /* ======================================================== */
+
+/* tag & class======================================================== */
+ul > .more {
+    margin: 10px 0;
+    text-align: left;
+}
+
+
