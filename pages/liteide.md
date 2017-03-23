@@ -11,6 +11,24 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 * Version: X31
 * Author: [visualfc](mailto:visualfc@gmail.com)
 
+### Screen
+
+* gocode 
+
+<img src="{{urls.media}}/liteide/gocode.png" alt="" width="600">
+
+* find usages
+
+<img src="{{urls.media}}/liteide/findusage.png" alt="" width="600">
+
+* code navigate
+
+<img src="{{urls.media}}/liteide/navigate.png" alt="" width="600">
+
+* quick open
+
+<img src="{{urls.media}}/liteide/quickopen.png" alt="" width="600">
+
 ### Features
 * Core features
 	* System environment management
