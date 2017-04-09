@@ -3,6 +3,49 @@ title: LiteIDE X
 description:
 ---
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+	Home();
+});
+
+
+function Home(){
+	var enUrl = "{{site.home}}/en/";
+	var cnUrl = "{{site.home}}/cn/";
+
+	// 优先cookie中用户设定的语言
+	var lang = getCookie("LITEIDE_LANGUAGE");
+	if (lang != null && lang != ""){
+		if (lang == "cn"){
+		 	window.location.href = cnUrl;
+		 	return;
+		} else if (lang == "en"){
+			window.location.href = enUrl;
+			return;
+		}
+	}
+
+	// 然后根据浏览器的语言跳转
+	var type = navigator.appName;
+	if (type == "Netscape"){
+		lang = navigator.language.toLowerCase();
+	} else {
+		lang = navigator.userLanguage.toLowerCase();
+	}
+	// 取得浏览器语言的前两个字母
+	lang = lang.substr(0,2);
+	if (lang == "zh"){
+	 	window.location.href = cnUrl;
+	 	return;
+	} else {
+		window.location.href = enUrl;
+		return;
+	}
+}
+</script>
+
+
 <img src="{{site.home}}/assets/media/liteide.png"/>
 
 <p></p>
@@ -15,8 +58,16 @@ description:
 	<li>Gotools Source code <a href="https://github.com/visualfc/gotools">https://github.com/visualfc/gotools</a></li>
 	<li>Release downloads
 		<ul>
-			<li><a href="http://sourceforge.net/projects/liteide/files">http://sourceforge.net/projects/liteide/files</a></li>
-			<li><a href="https://github.com/visualfc/liteide/releases/latest">https://github.com/visualfc/liteide/releases/latest</a></li>
+			<li>
+				<a href="http://sourceforge.net/projects/liteide/files">
+				http://sourceforge.net/projects/liteide/files
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/visualfc/liteide/releases/latest">
+				https://github.com/visualfc/liteide/releases/latest
+				</a>
+			</li>
 		</ul>
 	</li>
 	<li>Google group <a href="https://groups.google.com/group/liteide-dev">https://groups.google.com/group/liteide-dev</a></li>
@@ -24,34 +75,12 @@ description:
 
 <h2>Quick Start</h2>
 <ul>
-	<li> 
-		<a href="{{site.home}}/doc/en/install">How to Install
-		</a>
-	</li>
-	<li> 
-		<a href="{{site.home}}/doc/zh_CN/install">如何安装
-		</a>
-	</li>
-  <div class="more">
-    <a href="{{site.home}}/Documents" class="btn">more docs..</a>
-  </div>
+	<li> <a href="{{site.home}}/en/doc/install">How to install</a> </li>
+    <div class="more"> <a href="{{site.home}}/en/Documents" class="btn">Read more</a> </div>
 </ul>
 
-<p></p>
 
-<h2>最近文章</h2>
 
-{{# posts_latest }}
 
-<div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
 
-  {{{ summary }}}
-
-  <div class="more">
-    <a href="{{url}}" class="btn">阅读全文</a>
-  </div>
-</div>
-
-{{/ posts_latest }}
 

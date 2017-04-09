@@ -1,0 +1,25 @@
+---
+title: 博客
+description:
+---
+<div class="row">
+	<div class="span8">
+		{{# db.posts.collated }}
+			{{> posts_collate }}
+		{{/ db.posts.collated }}
+	</div>
+	<div class="span4">
+		<h4>Categories</h4>
+		<ul class="tag_box inline">
+		{{# categories }}
+		  {{> categories_list }}
+		{{/ categories }}
+		</ul>
+		<h4>Tags</h4>
+		<ul class="tag_box inline">
+		{{# tags }}
+		  {{> tags_list }}
+		{{/ tags }}
+		</ul>
+	</div>
+</div>
