@@ -48,7 +48,7 @@ _LiteIDE 是一个简单，开源，跨平台的 Go 语言 IDE._
 	* 代码导航
 	* 查找使用
 	* 代码重构
-	* Go playground支持
+	* Go playground 支持
 * 其他支持
 	* Markdown
 	* Json
