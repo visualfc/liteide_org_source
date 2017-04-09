@@ -32,23 +32,23 @@ _LiteIDE 是一个简单，开源，跨平台的 Go 语言 IDE._
 ### 功能
 * 核心功能
 	* 系统环境管理
-	* 编辑命令配置
+	* 可配置的编译构建命令
 	* 简单开放的调试系统
 	* Kate格式语法高亮和自动完成
-	* 可配置的语法WordApi列表
+	* 可配置的代码自动完成
 	* 基于Mime类型的系统
 	* 完全插件支持
 	* 快速打开
 * Golang语言支持
 	* 包浏览器
-	* 结构视图和大纲
+	* 类视图和大纲
 	* 文档浏览
 	* [Gocode](https://github.com/nsf/gocode) 代码自动完成支持
 	* GOPATH API 检索
 	* 代码导航
 	* 查找使用
 	* 代码重构
-	* Go playground
+	* Go playground支持
 * 其他支持
 	* Markdown
 	* Json
