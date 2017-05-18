@@ -2,6 +2,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -63,9 +64,23 @@ var tmpl_page_end = `
   </div>
 `
 
+var (
+	root     = "./../.."
+	flagRoot string
+)
+
+func init() {
+	flag.StringVar(&flagRoot, "root", "", "setup liteide root")
+}
+
 func main() {
-	fmt.Println("Update Download!")
-	update("./../..")
+	flag.Parse()
+	if flagRoot != "" {
+		root = flagRoot
+	}
+	root, _ := filepath.Abs(root)
+	log.Println("process download root", root)
+	update(root)
 }
 
 func IsDir(filename string) bool {
