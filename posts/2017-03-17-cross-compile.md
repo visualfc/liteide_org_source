@@ -143,7 +143,7 @@ go install runtime/internal/sys: mkdir /usr/local/go/pkg/windows_386: permission
 ```
 出现这个错误则说明 LiteIDE 没有 /usr/local/go 路径的写权限，遇到这种情况，我们需要在终端下先交叉编译好 go 环境。在终端下输入
 ```
-$ GOOS=windows GOARCH=386 go install std
+$ sudo GOOS=windows GOARCH=386 go install std
 ```
 这里的 `go install std` 表示编译安装标准库，安装结束后，我们在 LiteIDE 中就可以正常使用 windows-386 交叉编译环境了。
 对于其他交叉编译环境，需要时可以做同样的处理。

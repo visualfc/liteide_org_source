@@ -3,6 +3,8 @@ title : Install
 description:
 ---
 
+<!-- Install -->
+
 # Installing LiteIDE
 ## Prerequisites
 Use LiteIDE development golang need to install the Go language development environment.
@@ -23,13 +25,27 @@ Download the archive and extract it into /usr/local or $HOME
 Source code for LiteIDE can be found at <https://github.com/visualfc/liteide>.  You will need to install Qt4/Qt5 in order to compile the source.  Qt can be obtained from <https://qt-project.org/downloads> or from your distribution's package manager. For Mac OS X, you don't need to install Qt from source code, but run `brew update && brew install qt` which will save you several hours.
 
 ### Windows
+
+**Qt4**
+
 	> git clone https://github.com/visualfc/liteide.git
-	> set QTDIR=c:\Qt\Qt484
+	> set QTDIR=c:\Qt\Qt4.8.5
 	> set MINGWDIR=c:\Qt\MinGW
 	> cd liteide/build
 	> update_pkg.cmd
-	> build_mingw.cmd
-	> deploy_qt4.8_webkit.cmd
+	> build_windows_mingw.cmd
+	> deploy_windows_qt4.8_webkit.cmd
+
+**Qt5.6**
+
+	> git clone https://github.com/visualfc/liteide.git
+	> set QTDIR=C:\Qt\Qt5.6.2\5.6\mingw49_32
+	> set MINGWDIR=C:\Qt\Qt5.6.2\Tools\mingw492_32
+	> cd liteide/build
+	> update_pkg.cmd
+	> build_windows_mingw.cmd
+	> deploy_windows_qt5.6.cmd
+	
 
 ### Linux
 	$ git clone https://github.com/visualfc/liteide.git
@@ -63,13 +79,42 @@ Source code for LiteIDE can be found at <https://github.com/visualfc/liteide>.  
 	$ cd ~/liteide/build/liteide/bin
 	$ ./liteide
 
-### Mac OS X
+### Mac OS X / macOS
+
+**Qt 4**
+
 	$ git clone https://github.com/visualfc/liteide.git
 	$ export QTDIR=$HOME/QtSDK/Desktop/Qt/484/gcc #If QT is installed with brew, input: export QTDIR=/usr/local/Cellar/qt/4.8.6
 	$ cd liteide/build
 	$ ./update_pkg.sh
-	$ ./build_osx.sh
-	$ ./deploy_osx_qt4.sh
+	$ ./build_macos_qt4.sh
+	$ ./deploy_macos_qt4.sh
+	$ open liteide/LiteIDE.app
+
+**Qt 5 sdk install**
+
+Download Qt from http://www.qt.io/download and install. (Qt5.6.2/Qt5.7.1/Qt5.8)
+
+	$ git clone https://github.com/visualfc/liteide.git
+	$ export QTDIR=$HOME/Qt5.6.2/Qt5.6/clang_64
+	$ cd liteide/build
+	$ ./update_pkg.sh
+	$ ./build_macos_qt5.sh
+	$ ./deploy_macos_qt5.sh
+	$ open liteide/LiteIDE.app
+	
+**Qt 5 brew install**	
+
+Use brew install qt (eg brew install qt. Other versions of qt@5.5 and qt@5.7 works too).
+
+	$ git clone https://github.com/visualfc/liteide.git
+	$ export QTDIR=/usr/local/Cellar/qt/5.8.0_2 # or modify accordingly for qt@5.5 and qt@5.7
+	$ cd liteide/build
+	$ ./update_pkg.sh
+	$ ./build_macos_qt5.sh
+	$ open liteide/LiteIDE.app
+
+Warning! brew install qt rpath incorrect do not use deploy script. 
 
 ### OpenBSD
 	$ git clone https://github.com/visualfc/liteide.git
@@ -96,4 +141,4 @@ Source code for LiteIDE can be found at <https://github.com/visualfc/liteide>.  
 	$ cd ~/liteide/build/liteide/bin
 	$ ./liteide
 
-Be sure to set `QTDIR` (and `MINGWDIR` for Windows users) accordingly based on your local environment.
+**Addin** Be sure to set `QTDIR` (and `MINGWDIR` for Windows users) accordingly based on your local environment.
