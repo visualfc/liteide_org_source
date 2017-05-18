@@ -136,7 +136,8 @@ func update(root string) {
 	}
 	datas = append(datas, tmpl_page_end)
 	//fmt.Println(strings.Join(datas, "\n"))
-	err = ioutil.WriteFile(filepath.Join(pagedir, "download.html"), []byte(strings.Join(datas, "\n")), 0777)
+	err = ioutil.WriteFile(filepath.Join(pagedir, "en", "download.html"), []byte(strings.Join(datas, "\n")), 0777)
+	err = ioutil.WriteFile(filepath.Join(pagedir, "cn", "download.html"), []byte(strings.Join(datas, "\n")), 0777)
 	if err != nil {
 		log.Fatalln("error write downlaod file", err)
 	} else {
