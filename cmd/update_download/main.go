@@ -46,7 +46,7 @@ var tmpl_file_name = `
 				<td>$FILENAME</td>
 				<td>$FILESIZE</td>
 				<td>
-				  <a href="{{site.home}}/assets/media/download/$DIRNAME/$FILENAME" class="btn">download</a>
+				  <a href="/assets/media/download/$DIRNAME/$FILENAME" class="btn">download</a>
 				</td>
 			  </tr>
 `

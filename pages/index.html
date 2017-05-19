@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 
 function Home(){
-	var enUrl = "{{site.home}}/en/";
-	var cnUrl = "{{site.home}}/cn/";
+	var enUrl = "/en/";
+	var cnUrl = "/cn/";
 
 	// 优先cookie中用户设定的语言
 	var lang = getCookie("LITEIDE_LANGUAGE");
@@ -46,7 +46,7 @@ function Home(){
 </script>
 
 
-<img src="{{site.home}}/assets/media/liteide.png"/>
+<img src="/assets/media/liteide.png"/>
 
 <p></p>
 
@@ -75,8 +75,8 @@ function Home(){
 
 <h2>Quick Start</h2>
 <ul>
-	<li> <a href="{{site.home}}/en/doc/install">How to install</a> </li>
-    <div class="more"> <a href="{{site.home}}/en/Documents" class="btn">Read more</a> </div>
+	<li> <a href="/en/doc/install">How to install</a> </li>
+    <div class="more"> <a href="/en/Documents" class="btn">Read more</a> </div>
 </ul>
 
 

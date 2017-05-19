@@ -6,7 +6,7 @@
       {{# page.description }}
     <meta name="description" content="{{ . }}">
       {{/ page.description }}
-    <link rel="shortcut icon" href="{{site.home}}/assets/media/liteide.ico">
+    <link rel="shortcut icon" href="/assets/media/liteide.ico">
     <meta name="author" content="{{ site.author.name }}">
 
       {{{ assets }}} 
@@ -16,10 +16,10 @@
         var url = obj.getAttribute("url");
         var currentPath = location.pathname;
         var destination = "";
-        if (currentPath.indexOf("{{site.home}}/cn") >= 0){
-            destination = "{{site.home}}/cn/" + url;
+        if (currentPath.indexOf("/cn") >= 0){
+            destination = "/cn/" + url;
         } else {
-            destination = "{{site.home}}/en/" + url;
+            destination = "/en/" + url;
         }
         location.href = destination;
       }
@@ -27,7 +27,7 @@
       function GoHome(obj){
         var url = obj.getAttribute("url");
         setCookie("LITEIDE_LANGUAGE", url, 7);
-        location.href = "{{site.home}}/" + url;
+        location.href = "/" + url;
       }
     </script>
 
@@ -49,7 +49,7 @@
             </ul>
             <ul class="nav navbar-nav right">
                 <li class="dropdown">
-                     <a href="{{site.home}}/cn" class="dropdown-toggle" data-toggle="dropdown">
+                     <a href="/cn" class="dropdown-toggle" data-toggle="dropdown">
                          Language
                      </a>
                      <ul class="dropdown-menu">
