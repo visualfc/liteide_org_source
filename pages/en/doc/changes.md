@@ -3,9 +3,89 @@ title : Changes
 description:
 ---
 
-
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
+
+### 2017.6.12 Ver X32
+* LiteIDE
+	* support folder build config custom GOPATH
+	* support folder build config BUILDFLAGS -tags setup
+	* support folder build config TARGETBASENAME setup
+	* support session switching for folder/editor
+	* support load custom icon library from liteapp/qrc folder (default and folder)
+	* reimplemented multifolder model, it took me a long time :)
+	* add macOS session menu for native dock menu
+	* recent menu sync for multi windows
+	* gotools support +build source navigate (single file or -tags setup)
+* LiteApp
+	* add the session switching function
+	* add autosavedocument emit message option
+	* add max editor tab count option
+	* add option action to standard toolbar
+	* add tool window use shortcuts option for unstandard keyboard option
+	* add exit liteide ctrl+q on windows
+	* add themes (carbon.qss gray.qss sublime.qss) for liteide & beautify old themes, thanks for hope hook
+	* editor tab context add open terminal here action
+	* folders context menu add open in new windows action (new folder session)
+	* folder view add show showdetails action
+	* fix folder sync editor incorrect on macOS
+	* fix webview and debug console qss
+	* fix folders tool window enter key to jump
+	* fix exit error save session by ctrl+q on macos
+	* fix newfile dialog space name
+	* update folder tool window showInExporer showInShell action text
+* LiteFind
+	* find files add auto swith current folder checkbox
+	* find in editor add show replace mode checkbox
+	* filesearch enable replace whitespace or empty
+	* editor replace all in one edit block for ctrl+z once undo
+* LiteBuild
+	* add custom GOPATH in build config for build/debug/GolangEdit
+	* add custom share-value BUILDFLAGS in build config for build/debug/GolangEdit
+	* add custom TARGETBASENAME in build config for build/debug
+	* support BUILDFLAGS -tags for build/debug/GolangEdit
+	* update gosrc.xml to export custom value and share-value
+	* folders tool window context menu add Go build configuration action
+	* folders tool window context go tool use Go build configuration setup
+	* fix stop action for kill process
+* LiteDebug
+	* console use editor color scheme
+	* support LiteBuild folder build config BUILDFLAGS/BUILDARGS -tags flag setup
+* DlvDebugger
+	* fix process identify for auto exit
+* LiteEnv
+	* default env /usr/local/go on macosx
+	* update macosx cross env GOROOT for system
+* LiteEditor	
+	* context menu add convert case menu
+	* go.snippet add iferr
+	* update sublime.xml / sublime-bold.xml, thanks for hopehook <hopehook@qq.com>
+	* alt+backspace delete serial whitespaces
+	* option font QComboBox to QFontComboBox, add restore DefaultFont action
+	* option add show monospace font check
+	* option file types sort mimetype, show custom extsition first
+* GolangPackage
+	* gopath setup add use sysgopath/litegopath check
+* GolangPlay
+	* fix goplay use goenvironment
+* GolangDoc
+	* change golang api index search for go/api folder
+* GolangEdit
+	* add go root source readonly setup option
+	* support folder go build config BUILDFLAGS/BUILDARGS -tags flag setup
+	* fix interface type by gotools
+	* fix find process stop and run
+	* fix lookup guru for source query
+* GolangAst
+	* fix astview enter key to jump
+* FileBorwser
+	* fix file system enter key to jump
+* gotools
+	* fix types interface method
+	* types support +build for single source
+	* types support -tags flag
+* tools
+	* add new exportqrc tool for export liteide all build-in images
 
 ### 2017.3.9 Ver X31.1
 * LiteApp
