@@ -12,22 +12,33 @@
       {{{ assets }}} 
 
     <script type="text/javascript">
+      $(document).ready(function(){
+        Init();
+      });
+
+      function Init(){
+        var currentPath = location.pathname;
+        if (currentPath.indexOf("/cn/") >= 0){
+            setCookie("LITEIDE_LANGUAGE", "cn", 7);
+        } else if (currentPath.indexOf("/en/") >= 0){
+            setCookie("LITEIDE_LANGUAGE", "en", 7);
+        }
+      }
+
       function Go(obj){
         var url = obj.getAttribute("url");
-        var currentPath = location.pathname;
-        var destination = "";
-        if (currentPath.indexOf("/cn") >= 0){
-            destination = "/cn/" + url;
-        } else {
-            destination = "/en/" + url;
-        }
-        location.href = destination;
+        var lang = getCookie("LITEIDE_LANGUAGE");
+        if (lang == "cn"){
+          window.location.href = "/cn/" + url;
+          return;
+        } 
+        window.location.href = "/en/" + url;
       }
 
       function GoHome(obj){
         var url = obj.getAttribute("url");
         setCookie("LITEIDE_LANGUAGE", url, 7);
-        location.href = "/" + url;
+        location.href = "/" + url + "/";
       }
     </script>
 
