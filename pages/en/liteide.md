@@ -8,7 +8,7 @@ description:
 
 _LiteIDE is a simple, open source, cross-platform Go IDE._
 
-* Version: X32.1
+* Version: X33
 * Author: [visualfc](mailto:visualfc@gmail.com)
 
 ### Screen
