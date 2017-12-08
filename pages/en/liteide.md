@@ -8,7 +8,7 @@ description:
 
 _LiteIDE is a simple, open source, cross-platform Go IDE._
 
-* Version: X33
+* Version: X33.1
 * Author: [visualfc](mailto:visualfc@gmail.com)
 
 ### Screen
@@ -30,29 +30,40 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 <img src="{{urls.media}}/liteide/quickopen.png" alt="" width="600">
 
 ### Features
+
 * Core features
 	* System environment management
+	* MIME type management 
 	* Configurable build commands
-	* Simple and open debug system
-	* Kate format for auto-completion and theming
-	* Configurable auto-completion with WordApi
-	* MIME type based system
-	* Plugin support
-	* Quick Open
+	* Support files search replace and revert
+	* Quick open file, symbol and commands
+	* Plug-in system
+
+* Advanced code editor
+	* Code editor supports Golang, Markdown and Golang Present
+	* Rapid code navigation tools
+	* Syntax highlighting and color scheme
+	* Code completion
+	* Code folding
+	* Display save revision
+	* Reload file by internal diff way
+
 * Golang support
-	* Package browser
-	* Class view and outline
-	* Document browser
-	* [Gocode](https://github.com/nsf/gocode) support
-	* GOPATH API index
-	* Code Navigation
-	* Find Usages
-	* Code Refactor
-	* Go playground
-* Additional support
-	* Markdown
-	* Json
-	* Golang Present
+	* Golang build environment management
+	* Compile and test using standard Golang tools and GOPATH
+	* Custom GOPATH support system, IDE and project
+	* Custom project build configuration
+	* Golang package browser
+	* Golang class view and outline
+	* Golang doc search and api index
+	* Source code navigation and information tips
+	* Source code find usages
+	* Source code refactoring and revert
+	* Integrated [gocode](https://github.com/nsf/gocode)
+	* Integrated [gomodifytags](https://github.com/fatih/gomodifytags)
+	* Support source query tools guru
+	* Debug with GDB and [Delve](https://github.com/derekparker/delve)
+
 
 ### Supported Systems
 * Windows x86 (32-bit or 64-bit)

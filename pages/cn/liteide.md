@@ -6,9 +6,9 @@ description:
 
 ### 简介
 
-_LiteIDE 是一个简单，开源，跨平台的 Go 语言 IDE._
+_LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 
-* 版本: X33
+* 版本: X33.1
 * 作者: [七叶 (visualfc)](mailto:visualfc@gmail.com)
 
 ### 截屏
@@ -30,29 +30,39 @@ _LiteIDE 是一个简单，开源，跨平台的 Go 语言 IDE._
 <img src="{{urls.media}}/liteide/quickopen.png" alt="" width="600">
 
 ### 功能
+
 * 核心功能
 	* 系统环境管理
-	* 可配置的编译构建命令
-	* 简单开放的调试系统
-	* Kate 格式语法高亮和自动完成
-	* 可配置的代码自动完成
-	* 基于 Mime 类型的系统
-	* 完全插件支持
-	* 快速打开
-* Golang语言支持
-	* 包浏览器
-	* 类视图和大纲
-	* 文档浏览
-	* [Gocode](https://github.com/nsf/gocode) 代码自动完成支持
-	* GOPATH API 检索
-	* 代码导航
-	* 查找使用
-	* 代码重构
-	* Go playground 支持
-* 其他支持
-	* Markdown
-	* Json
-	* Golang Present
+	* MIME类型管理
+	* 可配置编译命令
+	* 支持文件搜索替换和恢复
+	* 快速打开文件、符号和命令
+	* 插件系统
+	
+* 高级代码编辑器
+	* 代码编辑支持 Go语言、Markdown 和 Golang Present
+	* 快速代码导航工具
+	* 语法高亮和配色方案
+	* 代码完成
+	* 代码折叠
+	* 显示保存修订
+	* 重读文件使用代码差异方式
+	
+* Go 语言支持
+	* Go 编译环境管理
+	* 使用标准 Go 工具和 GOPATH 编译和测试
+	* 自定义 GOPATH 支持 系统定义、IDE 定义和项目定义
+	* 自定义项目编译配置
+	* Go 包浏览器
+	* Go 类视图和大纲
+	* Go 文档搜索和 API 索引
+	* 代码导航和信息提示
+	* 代码查找引用
+	* 代码重构和恢复
+	* 集成 [gocode](https://github.com/nsf/gocode)
+	* 集成 [gomodifytags](https://github.com/fatih/gomodifytags)
+	* 支持代码查询工具 guru
+	* 调试支持 GDB 和 [Delve](https://github.com/derekparker/delve)
 
 ### 系统支持
 * Windows x86 (32-bit or 64-bit)
