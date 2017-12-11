@@ -6,6 +6,84 @@ description:
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
 
+### 2017.12.12 Ver X33.1
+* LiteIDE
+	* support quick open command
+	* support gomodifytags
+	* fix libpng warning on qt5 build 
+* LiteApp
+	* add tools menu for quick open actions
+	* standard and rename tool window title
+	* enable edit menu anytime, fix edit menu disable on editor lost focus.
+	* fix editor load large file bad_alloc recover
+* LiteEnv
+	* add select env to tools menu	
+* LiteEditor
+	* check and not open large file
+	* fix edit hide edit sub menu 'setup' on macos
+* LiteFind
+	* fix find editor replace all wrap around* GolangEdit
+	* Integrated [gomodifytags](https://github.com/fatih/gomodifytags) and gui tools support gomodifytags all options
+* QuickOpen
+	* add quick open command action (ctrl+shift+p/command+shift+p)
+	* quickopenfiles use thread for fast and cancel
+	* fix quickopenfile cancel loading for esc or liteapp quit
+
+### 2017.11.2 Ver X33
+* LiteIDE
+	* optimization editor plugin, load file check codec, reload file by diff
+	* add astview TodoList
+	* add new bookmarks plugin
+	* fix liteapp clean plugin order
+* LiteApp
+	* filemanager auto reload file default YesToAll
+	* fix liteapp clean plugins reverse order
+	* fix #832, sidebar change action by combox
+	* fix folder sync editor same prefix error 
+* LiteEditor
+	* reload file use diff to keep state and mark
+	* load file check is binary and report
+	* load file check codec use libucd if utf8 decode failed.
+	* load file check decode error and report 
+	* load file is readonly set editor widget readonly
+	* load and save file support utf8 bom
+	* add codec and lineend info on statusbar
+	* add copied text into the clipboard as HTML option
+	* add Solarized Dark color theme, thanks xgdgsc
+	* reimplemented editor mark api
+	* fix copy to clipboard tab escape
+* GolangAst
+	* add TodoList for classview and outline
+	* fix #848, astwidget double clicked index check.
+* GolangCode
+	* update pkglist to go1.9
+* GolangEdit
+	* add stop source query action
+	* add source query action implement_GOPATH for GOPATH scope
+	* fix golang lexer parser folding end
+	* fix GolangHighlighter fold indent error set
+	* fix findUsage wordUnderCursor offset
+	* fix find usages findStart signal late
+* GolangFmt
+	* load diff check modify current block text
+* GolangCode
+	* fix update gopath process stop and wait
+* LiteDebug
+	* fix cmd to native separator
+	* build target add -a build flag
+	* change debug targget name to target.debug (custom by LiteBuild)
+* LiteBuild
+	* add custom debug name in build config
+* LiteFind
+	* fix memory leak by GolangEdit GolangFileSearch
+	* fix findInFiles berore saveAllEditor
+	* fix FindEditor replace all
+* Bookmarks
+	* new plugin for show open editors bookmarks and jump
+* gotools
+	* update stdlib for go1.9.1
+	* astview add TodoList support
+
 ### 2017.7.18 Ver X32.2
 * LiteApp
 	* fix editor file watcher is invalid for many change
