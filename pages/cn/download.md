@@ -19,5 +19,5 @@ description:
 
 ### Release downloads
 	
-* <http://sourceforge.net/projects/liteide/files>
 * <https://github.com/visualfc/liteide/releases/latest>
+* <http://sourceforge.net/projects/liteide/files>
