@@ -6,6 +6,55 @@ description:
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
 
+### 2018.04.23 Ver X33.3
+* LiteIDE
+	* support import jump to package source file
+	* support import hints for all package on code completer
+	* add build & debug action to build menu
+	* fix build debug gcflags for go version
+* LiteApp
+	* fix tab style sheet for Qt5.9 on macOS
+	* project wizard add gocmdex/gopkgex for anywhere
+* LiteBuild
+	* build config file add debug support
+	* golang build add debug/debugtest action
+	* fix golang build debug gcflags depends for go version
+* LiteDebug
+	* filesystem add debug file action
+	* remove internal golang build function
+* LiteEditor
+	* reimplemented backspace quotes audo insert/remove action
+* GolangCode
+	* parser import package for GOPATH 
+	* fix vendor import for code completer
+	* add import hints for all package option (default)
+	* add parser cgo completer list on editor
+* GolangEdit
+	* fix import line navigate show link source
+	* add import line jump to package file list
+* QuickOpen
+	* add quickopenfolder implement
+* gotools
+	* add new debugflag action for print debug gcflags for go version
+	* types find import dir check vendor
+	* types add import info and doc
+	* fix astview pkg nil check
+	
+### 2018.02.14 Ver X33.2
+* LiteIDE
+	* add folder tool window split mode swith
+	* add archlinux makepkg
+	* add tcl syntax and build
+* LiteEditor
+	* support function color, thanks [discoverfly](https://github.com/discoverfly)
+	* add default-func color theme
+	* add style for scroll bars in sublime.qss, thanks [hauke96](https://github.com/hauke96)
+	* add marks for selections and findings, thanks [jinq0123](https://github.com/jinq0123)
+* LiteFind
+	* fix editor regexp replace
+* LiteBuild
+	* add context menu go tool action
+
 ### 2017.12.12 Ver X33.1
 * LiteIDE
 	* support quick open command
