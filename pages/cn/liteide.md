@@ -97,4 +97,4 @@ _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 <https://github.com/visualfc/liteide/blob/master/liteidex/deploy/welcome/en/changes.md>
 
 ### 支持 LiteIDE
-* <http://visualfc.github.com/support>
+* <https://visualfc.github.com/support>

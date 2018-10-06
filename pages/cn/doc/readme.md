@@ -61,4 +61,4 @@ _LiteIDE是一个简单，开源，跨平台的Go语言IDE._
 * FAQ
 	* <https://github.com/visualfc/liteide/blob/master/liteidex/deploy/welcome/zh_CN/guide.md>	
 * 支持LiteIDE
-	* <http://visualfc.github.com/support>
+	* <https://visualfc.github.com/support>
