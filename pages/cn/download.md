@@ -20,3 +20,4 @@ description:
 	
 * <https://github.com/visualfc/liteide/releases/latest>
 * <http://sourceforge.net/projects/liteide/files>
+* [百度网盘](<https://pan.baidu.com/s/1wYHSEfG1TJRC2iOkE_saJg)  密码:jzrc
