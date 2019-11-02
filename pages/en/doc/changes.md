@@ -6,6 +6,238 @@ description:
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
 
+### 2019.10.30 Ver X36.2
+* LiteIDE
+    * add new image viewer plugin
+    * folder view support multi copy & paste
+    * folder view support move to trash
+    * fix gocode crash
+    * update uk (Ukrainian) translation, thanks for cl0ne
+* LiteApp
+    * fix floating dock widet style
+    * add dock widget floating toolbar
+    * folder view support multi copy and paste
+    * folder view support move to trash action
+* ImageEditor
+    * add new image viewer plugin
+    * support image viewer and gif video play
+* GolangEdit
+    * support go1.13 number literal syntax highlight
+* gotools & gocode
+    * fix bad parser crash
+
+### 2019.08.28 Ver X36.1
+* LiteIDE
+    * folder view support copy and paste
+    * fix find usages and declinfo for _ start symbol
+    
+* LiteApp
+    * multi folder view support copy and parse
+    * tool window support floating window action
+* LiteEditor
+    * cached text layout, optimization long line paint
+    * check and disable document too long line (4096) syntax.
+* GolangEdit
+    * fix findusage and declinfo for _ start symbol
+* GolangPackage
+    * add custom GOPROXY setup
+    * update GO111MODULE env reload check
+* GolangDoc
+    * remove godoc command, use gotools godoc
+* FileBorwser
+    * folder view support copy and paste
+* Others
+    * linux env add x-terminal-emulator
+    * update Russian translation, thanks Sergey Belyashov
+* gotools & gocode
+    * fix mod priority vendor check
+* gotools
+    * godoc add go doc -all flags
+
+### 2019.03.15 Ver X36
+* LiteIDE
+    * add new editor path navigation toolbar
+* QuickOpen
+    * quickopenfile filter text length less than 3 use editor files, otherwise search in folder files.
+    * add new quickfilesystem filter
+* GolangEdit
+    * use new quickfilesystem for import jump
+* LiteEditor
+    * add new path navigation toolbar (use quickfilesystem)
+* GolangCode
+    * fix number+dot issues completer
+* FileUtil
+    * show in Finder fast on macOS
+
+### 2019.02.05 Ver X35.5
+* LiteIDE
+    * bug fix version
+* GolangEdit
+    * fix cursor selections usages lookup
+    * add byteOffsetToColumn to fix gotools/guru output byte offset to editor offset
+* LiteEditor
+    * add allow vertical scrolling to the last line option
+    * check file writed size != data.size and show error message
+* LiteFind
+    * update search result item text for all same linenumber
+
+### 2019.01.30 Ver X35.4
+* LiteIDE
+    * source code navigation can be used in wrong source code
+    * imports completer support gomod depends and local imports for gomod project
+    * imports completer support lookup all imports by source for GOPATH project
+* LiteApp
+    * fix vs-dark.qss menu icon bug for windows10
+* LiteEditor
+    * fuzzy golang imports completer
+    * fix complter imports offset
+    * fix enter auto insert tab or space check by previous line
+* GolangCode
+    * fix receive imports line process
+* GolangEdit
+    * support lookup types info wrong source code
+    * add jump to declaration toolbar
+    * fix jump to declaration save history
+
+* gotools & gocode
+    * source code navigation can be used in wrong source code
+    * lookup gomod depends and local imports for gomod project
+    * lookup all imports from source for GOPATH project
+
+### 2018.12.22 Ver X35.3
+* LiteIDE
+    * optimization gotools & gocode, update editor and find plugin.
+* LiteApp
+    * fix liteoutput antialias setup invalid
+* LiteEditor
+    * enable vertical scrollbar move last block to top viewport
+    * add the cut current line operator for cut action if not selected
+    * add convert tab/spaces action
+    * add tabtospace/tabwidth set by litapp/mimetype/liteeditor.xml or options
+    * update line wrap mode for mimetype
+    * update tabtospace mode for mimetype
+* LiteFind
+    * file search check and skip binary file
+    * add folders/filesystem context menu file search action
+* GolangEdit, GolangCode, LiteBuild
+    * fix process start with cmd contains space on macOS
+* GolangDoc
+    * support check go1.12 godoc remove -html, use text mode
+
+* gotools & gocode
+    * fix lookup named method embedded
+    * optimization, check save/load pkgconfig
+    * add godoc command for check go1.12 use text mode
+* gocode
+    * fixed global var completion
+
+### 2018.11.12 Ver X35.2
+* LiteIDE
+    * fixed types info jump position
+    * optimization types info lookup cache
+* LiteEditor
+    * single line comment set after white spaces and add space
+    * go.mod editor support comment action
+    * color scheme support MatchBrackets background, default gray #808080
+* Bookmarks
+    * sort bookmark model by name/line, add context menu goto/remove/removeThisFile/removeAllFiles action
+* GolangDoc
+    * fix mod package godoc import path view
+* GolangEdit
+    * fix lookup types info by gocode cache
+* gotools & gocode
+    * fixed types jump info position
+    * optimization types info lookup cache
+
+### 2018.10.24 Ver X35.1
+* LiteIDE
+    * BUG fixed, gocode code jump and import line jump
+* GolangEdit
+    * fix jump def for import line
+* gotools & gocode
+    * fix types jump
+
+### 2018.10.24 Ver X35
+* LiteIDE
+    * all support Go1.11 Go modules
+    * fast lookup types info by cache
+    * fix delve debug recurse set blocking
+* LiteApp
+    * side window style enable move tool window to any left/right/bottom side.
+    * side window style output bar shortcut change to command+meta+number (macos) or ctrl+shift+number
+* GolangEdit
+    * fast lookup types info by gocode cache
+    * find all usages support Go modules work dir
+    * refactor symbol support Go module work dir
+* GolangAst
+    * support import path gopath/vendor/modules doc view
+* LiteDebug
+    * add automatically add breakpoint main.main when debugging option (default disable)
+* DlvDebugger
+    * fix dlv list variables blocking, change LoadConfig recurse to 3
+* LiteBuild
+    * update gosrc.xml for support custom target workdir
+
+* gotools & gocode
+    * import https://github/visualfc/fastmod for fast parse go.mod depends
+    * fast parse Go modules and fix issues https://github.com/visualfc/liteide/issues/986
+* gotools
+    * find all usages support Go module work dir
+* gotools
+    * fast completer for Go module project
+    * provide types info for liteide by cache
+
+### 2018.10.05 Ver X34.3
+* LiteIDE
+    * fix support go1.11 modules
+* GolangEdit
+    * fix jump import line
+    * fix find usages for import line
+* LiteEditor
+    * fix gocode completer item kind update
+* GolangCode
+    * enviroment changed to reset gocode
+* gotools & gocode
+    * types: fix module-based project with several subpackages https://github.com/visualfc/liteide/issues/977
+    * types: fix redeclared file parser cursor first
+    * types: fix source file update check in stdin
+    * types: fix x test files check
+    * gomod: fix lookup module for go list
+* gocode
+    * fix gocode crash https://github.com/visualfc/liteide/issues/978
+
+### 2018.09.15 Ver X34.2
+* LiteIDE
+    * fix gotools & gocode support go1.11 modules sub folder
+    * support custom GO111MODULE setup
+* LiteApp
+    * fix #939 display right margin at column wrong
+    * change mime type check fullname first
+* GolangCode
+    * fix #970 goplay editor cgo crash
+* GolangEdit
+    * find usages / rename symbol add skip GOROOT actions
+* GolangPackage
+    * add custom GO111MODULE setup
+* LiteEditor
+    * add extra mouse navagite go back and forward
+    * add gomod.xml for go.mod syntax
+* LiteBuild
+    * add gomod.xml for go.mod build command
+* gotools & gocode
+    * fix go1.11 modules sub folder
+
+### 2018.08.12 Ver X34.1
+* LiteIDE
+    * update gotools support go1.11 modules
+    * update gocode support go1.11 modules and vendor
+* LiteEditor
+    * enable open binary file for editor
+    * change widget readonly by binary file (ignore text file)
+* gocode
+    * change parser by source use gotools/types
+    * fix parser vendor & modules
+
 ### 2018.07.26 Ver X34
 * LiteIDE
 	* update gotools support go1.11 modules
