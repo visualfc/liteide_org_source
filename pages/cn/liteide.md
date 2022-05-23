@@ -8,7 +8,7 @@ description:
 
 _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 
-* 版本: X37.4
+* 版本: X38.0
 * 作者: [七叶 (visualfc)](mailto:visualfc@gmail.com)
 
 ### 截屏
